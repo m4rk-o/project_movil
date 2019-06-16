@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activity_final_sintaxis"></activity>
+        <activity android:name=".Activity_semi_sintaxis" />
+        <activity android:name=".Activity_final_strings" />
+        <activity android:name=".Activity_semi_strings" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity_semi" />
-        <activity android:name=".Activity_final"></activity>
+        <activity android:name=".Activity_final" />
     </application>
 
 </manifest>

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         cad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_semi.class);
+                Intent i = new Intent(v.getContext(),Activity_semi_strings.class);
                 String titulo = cad.getText().toString();
                 i.putExtra("titulo",titulo);
                 i.putExtra("con","cad");
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         sin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_semi.class);
+                Intent i = new Intent(v.getContext(),Activity_semi_sintaxis.class);
                 String titulo = sin.getText().toString();
                 i.putExtra("titulo",titulo);
                 i.putExtra("con","sin");
