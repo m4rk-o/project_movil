@@ -26,6 +26,8 @@ public class Activity_c_multiplos extends AppCompatActivity {
                     int n2 = Integer.parseInt(etmult2.getText().toString());
                     String res = multiplos(n1, n2);
                     etresmult.setText(res);
+                    etresmult.setFocusable(false);
+                    etresmult.setClickable(false);
                 }
                 catch(Exception ex){
 

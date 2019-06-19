@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class Activity_final extends AppCompatActivity {
 
-    Button correrMultiplos, verMultiplos, correrModulo, verModulo, correrExponenciales, verExponenciales;
+    Button correr, ver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,20 +18,36 @@ public class Activity_final extends AppCompatActivity {
         Intent recibir = getIntent();
         String titulo = recibir.getStringExtra("titulo");
         setTitle(titulo);
+        correr = findViewById(R.id.btncorrer);
+        ver = findViewById(R.id.btnver);
         if(titulo.equals("MULTIPLOS")){
-            correrMultiplos = findViewById(R.id.btncorrer);
-            correrMultiplos.setOnClickListener(new View.OnClickListener() {
+            correr.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent m = new Intent(getApplicationContext(), Activity_c_multiplos.class);
                     startActivity(m);
                 }
             });
-            verMultiplos = findViewById(R.id.btnver);
-            verMultiplos.setOnClickListener(new View.OnClickListener() {
+            ver.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent m = new Intent(getApplicationContext(), Activity_v_multiplos.class);
+                    startActivity(m);
+                }
+            });
+        }
+        if(titulo.equals("MÓDULO")){
+            correr.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent m = new Intent(getApplicationContext(), Activity_c_modulo.class);
+                    startActivity(m);
+                }
+            });
+            ver.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent m = new Intent(getApplicationContext(), Activity_v_modulo.class);
                     startActivity(m);
                 }
             });
