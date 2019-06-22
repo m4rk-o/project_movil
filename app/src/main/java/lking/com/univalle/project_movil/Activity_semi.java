@@ -50,7 +50,7 @@ public class Activity_semi extends AppCompatActivity {
         mul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_multiplos.class);
                 String titulo = mul.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
@@ -60,7 +60,7 @@ public class Activity_semi extends AppCompatActivity {
         mod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_modulo.class);
                 String titulo = mod.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
@@ -70,7 +70,7 @@ public class Activity_semi extends AppCompatActivity {
         ex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_elevar.class);
                 String titulo = ex.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
