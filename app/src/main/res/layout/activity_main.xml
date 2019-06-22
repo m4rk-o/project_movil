@@ -9,27 +9,93 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/btnnum"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/numeros"
+                app:civ_border_color="#043605"
+                app:civ_border_width="5dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numeros" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/btnstr"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/strings"
+                        app:civ_border_color="#050505"
+                        app:civ_border_width="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cadenas" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/btnsint"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/sintaxis"
+                        app:civ_border_color="#F1F1F1"
+                        app:civ_border_width="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sintraxis" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnnum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Numeros" />
-
-    <Button
-        android:id="@+id/btnstr"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Strings" />
-
-    <Button
-        android:id="@+id/btnsint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sintaxis" />
 
 </LinearLayout>
