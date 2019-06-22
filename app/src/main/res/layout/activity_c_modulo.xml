@@ -8,6 +8,12 @@
     android:layout_height="match_parent"
     tools:context=".Activity_c_modulo">
 
+    <Button
+        android:id="@+id/btnvermod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Codigo" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

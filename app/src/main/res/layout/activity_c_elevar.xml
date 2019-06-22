@@ -6,10 +6,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_c_multiplos">
+    tools:context=".Activity_c_elevar">
 
     <Button
-        android:id="@+id/btnvermult"
+        android:id="@+id/btnverelevar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Codigo" />
@@ -20,7 +20,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/etMult1"
+            android:id="@+id/etelev1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -28,30 +28,22 @@
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/etMult2"
+            android:id="@+id/etelev2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="number" />
-
     </LinearLayout>
 
-    <LinearLayout
+    <Button
+        android:id="@+id/btnreselev"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/operarmult"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Resultado" />
-    </LinearLayout>
+        android:text="Resultado" />
 
     <EditText
-        android:id="@+id/etResMult"
+        android:id="@+id/etreselev"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

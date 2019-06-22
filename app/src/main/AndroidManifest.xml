@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_v_modulo"></activity>
+        <activity android:name=".Activity_datos_primitivos"></activity>
+        <activity android:name=".Activity_scanner" />
+        <activity android:name=".Activity_leerDatos" />
+        <activity android:name=".Activity_c_elevar" />
+        <activity android:name=".Activity_v_elevar" />
+        <activity android:name=".Activity_v_modulo" />
         <activity android:name=".Activity_c_modulo" />
         <activity android:name=".Activity_v_multiplos" />
         <activity android:name=".Activity_c_multiplos" />

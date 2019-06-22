@@ -1,5 +1,6 @@
 package lking.com.univalle.project_movil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +9,7 @@ import android.widget.EditText;
 
 public class Activity_c_modulo extends AppCompatActivity {
     EditText etmod1, etmod2, etResmod;
-    Button btnResmod;
+    Button btnResmod, vermod;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class Activity_c_modulo extends AppCompatActivity {
         etmod2 = findViewById(R.id.etmod2);
         etResmod = findViewById(R.id.etresmod);
         btnResmod = findViewById(R.id.btnresmod);
+        vermod = findViewById(R.id.btnvermod);
         btnResmod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,6 +34,13 @@ public class Activity_c_modulo extends AppCompatActivity {
                 catch (Exception ex){
 
                 }
+            }
+        });
+        vermod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Activity_v_modulo.class);
+                startActivity(i);
             }
         });
     }

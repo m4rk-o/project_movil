@@ -6,16 +6,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_v_modulo">
-
-    <Button
-        android:id="@+id/btncorrermod"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="correr" />
+    tools:context=".Activity_datos_primitivos">
 
     <EditText
-        android:id="@+id/etvermod"
+        android:id="@+id/etdatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

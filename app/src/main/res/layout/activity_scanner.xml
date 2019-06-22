@@ -6,16 +6,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_v_modulo">
+    tools:context=".Activity_scanner">
 
     <Button
-        android:id="@+id/btncorrermod"
+        android:id="@+id/btnbuff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="correr" />
+        android:text="bufferedreader" />
 
     <EditText
-        android:id="@+id/etvermod"
+        android:id="@+id/etscan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

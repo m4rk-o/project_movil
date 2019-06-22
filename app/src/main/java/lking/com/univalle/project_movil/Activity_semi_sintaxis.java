@@ -32,7 +32,7 @@ public class Activity_semi_sintaxis extends AppCompatActivity {
         LeDa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_leerDatos.class);
                 String titulo = LeDa.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
@@ -72,7 +72,7 @@ public class Activity_semi_sintaxis extends AppCompatActivity {
         DaPr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_datos_primitivos.class);
                 String titulo = DaPr.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
