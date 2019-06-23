@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Activity_semi extends AppCompatActivity {
-    LinearLayout fib,pri,fac,mul,mod,ex,cri,mcd;
+    Button fib,pri,fac,mul,mod,ex,cri,mcd;
     TextView fib1,pri1,fac1,mul1,mod1,ex1,cri1,mcd1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +97,7 @@ public class Activity_semi extends AppCompatActivity {
             }
         });
         mcd = findViewById(R.id.btnMcd);
-        mod1 = findViewById(R.id.textView15);
+        mcd1 = findViewById(R.id.textView15);
         mcd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

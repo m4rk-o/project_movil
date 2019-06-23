@@ -6,297 +6,363 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="#000000"
     tools:context=".Activity_semi">
 
-    <LinearLayout
-        android:id="@+id/btnFib"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:background="@layout/bordeslayout"
-        android:orientation="horizontal"
-        android:padding="8dp">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img1"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@mipmap/numeros"
-            app:civ_border_color="#043605"
-            app:civ_border_width="5dp" />
+    <ScrollView
+        style="@android:style/Widget.Holo.ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="200dp"
-                android:layout_height="22dp"
-                android:text="Fibonacci" />
-
-            <TextView
-                android:id="@+id/textView2"
+            <LinearLayout
+                android:id="@+id/btnFibL"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-        </LinearLayout>
+                android:layout_height="90dp"
+                android:background="@layout/bordeslayout"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
 
-    </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/numeros"
+                    app:civ_border_color="#043605"
+                    app:civ_border_width="5dp" />
 
-    <LinearLayout
-        android:id="@+id/btnPrimos"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:background="@layout/bordeslayout"
-        android:orientation="horizontal"
-        android:padding="8dp">
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img2"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@mipmap/numeros"
-            app:civ_border_color="#043605"
-            app:civ_border_width="5dp" />
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="200dp"
+                        android:layout_height="22dp"
+                        android:text="Fibonacci" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        android:text="TextView" />
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="200dp"
-                android:layout_height="22dp"
-                android:text="Numeros Primos" />
+                <Button
+                    android:id="@+id/btnFib"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/simbolo01" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView4"
+            <LinearLayout
+                android:id="@+id/btnPrimosL"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-        </LinearLayout>
+                android:layout_height="90dp"
+                android:background="@layout/bordeslayout"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
 
-    </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/numeros"
+                    app:civ_border_color="#043605"
+                    app:civ_border_width="5dp" />
 
-    <LinearLayout
-        android:id="@+id/btnFac"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:background="@layout/bordeslayout"
-        android:orientation="horizontal"
-        android:padding="8dp">
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img3"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@mipmap/numeros"
-            app:civ_border_color="#043605"
-            app:civ_border_width="5dp" />
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="200dp"
+                        android:layout_height="22dp"
+                        android:text="Numeros Primos" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="200dp"
-                android:layout_height="22dp"
-                android:text="Factorial" />
+                <Button
+                    android:id="@+id/btnPrimos"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/simbolo01" />
 
-            <TextView
-                android:id="@+id/textView6"
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnFacL"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-        </LinearLayout>
+                android:layout_height="90dp"
+                android:background="@layout/bordeslayout"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
 
-    </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/numeros"
+                    app:civ_border_color="#043605"
+                    app:civ_border_width="5dp" />
 
-    <LinearLayout
-        android:id="@+id/btnMul"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:background="@layout/bordeslayout"
-        android:orientation="horizontal"
-        android:padding="8dp">
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img4"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@mipmap/numeros"
-            app:civ_border_color="#043605"
-            app:civ_border_width="5dp" />
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="200dp"
+                        android:layout_height="22dp"
+                        android:text="Factorial" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="200dp"
-                android:layout_height="22dp"
-                android:text="Multiplos" />
+                <Button
+                    android:id="@+id/btnFac"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/simbolo01" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView8"
+            <LinearLayout
+                android:id="@+id/btnMulL"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-        </LinearLayout>
+                android:layout_height="90dp"
+                android:background="@layout/bordeslayout"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
 
-    </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/numeros"
+                    app:civ_border_color="#043605"
+                    app:civ_border_width="5dp" />
 
-    <LinearLayout
-        android:id="@+id/btnMod"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:background="@layout/bordeslayout"
-        android:orientation="horizontal"
-        android:padding="8dp">
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img5"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@mipmap/numeros"
-            app:civ_border_color="#043605"
-            app:civ_border_width="5dp" />
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="200dp"
+                        android:layout_height="22dp"
+                        android:text="Multiplos" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="200dp"
-                android:layout_height="22dp"
-                android:text="Modulo" />
+                <Button
+                    android:id="@+id/btnMul"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/simbolo01" />
 
-            <TextView
-                android:id="@+id/textView10"
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnModL"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_height="90dp"
+                android:background="@layout/bordeslayout"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
 
-        </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/numeros"
+                    app:civ_border_color="#043605"
+                    app:civ_border_width="5dp" />
 
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/btnExp"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:background="@layout/bordeslayout"
-        android:orientation="horizontal"
-        android:padding="8dp">
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="200dp"
+                        android:layout_height="22dp"
+                        android:text="Modulo" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img6"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@mipmap/numeros"
-            app:civ_border_color="#043605"
-            app:civ_border_width="5dp" />
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="200dp"
-                android:layout_height="22dp"
-                android:text="Exponecial" />
+                <Button
+                    android:id="@+id/btnMod"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/simbolo01" />
 
-            <TextView
-                android:id="@+id/textView12"
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnExpL"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-        </LinearLayout>
+                android:layout_height="90dp"
+                android:background="@layout/bordeslayout"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
 
-    </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/numeros"
+                    app:civ_border_color="#043605"
+                    app:civ_border_width="5dp" />
 
-    <LinearLayout
-        android:id="@+id/btnCri"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:background="@layout/bordeslayout"
-        android:orientation="horizontal"
-        android:padding="8dp">
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img7"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@mipmap/numeros"
-            app:civ_border_color="#043605"
-            app:civ_border_width="5dp" />
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="200dp"
+                        android:layout_height="22dp"
+                        android:text="Exponecial" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="220dp"
-                android:layout_height="22dp"
-                android:text="Maximo Comun Multiplo y Divisor" />
+                <Button
+                    android:id="@+id/btnExp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/simbolo01" />
 
-            <TextView
-                android:id="@+id/textView14"
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCriL"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_height="90dp"
+                android:background="@layout/bordeslayout"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
 
-        </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/numeros"
+                    app:civ_border_color="#043605"
+                    app:civ_border_width="5dp" />
 
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/btnMcd"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:background="@layout/bordeslayout"
-        android:orientation="horizontal"
-        android:padding="8dp">
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="220dp"
+                        android:layout_height="22dp"
+                        android:text="Criba de Esrastostenes" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img8"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:src="@mipmap/numeros"
-            app:civ_border_color="#043605"
-            app:civ_border_width="5dp" />
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="200dp"
-                android:layout_height="22dp"
-                android:text="Multiplos" />
+                <Button
+                    android:id="@+id/btnCri"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/simbolo01" />
 
-            <TextView
-                android:id="@+id/textView16"
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnMcdL"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_height="90dp"
+                android:background="@layout/bordeslayout"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
 
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/numeros"
+                    app:civ_border_color="#043605"
+                    app:civ_border_width="5dp" />
+
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:text="Max. Comun Multiplo y Divisor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnMcd"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/simbolo01" />
+
+            </LinearLayout>
         </LinearLayout>
-
-    </LinearLayout>
-
+    </ScrollView>
 </LinearLayout>
