@@ -32,7 +32,7 @@
                     android:id="@+id/img1"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@mipmap/sintaxis"
+
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -58,7 +58,7 @@
                     android:id="@+id/btn1"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@mipmap/simbolo01" />
+                     />
             </LinearLayout>
 
             <LinearLayout
@@ -74,7 +74,7 @@
                     android:id="@+id/img2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@mipmap/sintaxis"
+
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -100,7 +100,7 @@
                     android:id="@+id/btn2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@mipmap/simbolo01" />
+                     />
 
             </LinearLayout>
 
@@ -117,7 +117,7 @@
                     android:id="@+id/img3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@mipmap/sintaxis"
+
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -143,7 +143,7 @@
                     android:id="@+id/btn3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@mipmap/simbolo01" />
+                     />
             </LinearLayout>
 
             <LinearLayout
@@ -159,7 +159,7 @@
                     android:id="@+id/img4"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@mipmap/sintaxis"
+
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -185,7 +185,7 @@
                     android:id="@+id/btn4"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@mipmap/simbolo01" />
+                     />
 
             </LinearLayout>
 
@@ -202,7 +202,7 @@
                     android:id="@+id/img5"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@mipmap/sintaxis"
+
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -229,7 +229,7 @@
                     android:id="@+id/btn5"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@mipmap/simbolo01" />
+                     />
 
             </LinearLayout>
 
@@ -246,7 +246,7 @@
                     android:id="@+id/img6"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@mipmap/sintaxis"
+
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -272,7 +272,7 @@
                     android:id="@+id/btn6"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@mipmap/simbolo01" />
+                     />
 
             </LinearLayout>
 
