@@ -23,7 +23,7 @@
                 android:id="@+id/btnnum"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-
+                android:src="@mipmap/numeros"
                 app:civ_border_color="#043605"
                 app:civ_border_width="5dp" />
 
@@ -55,7 +55,7 @@
                         android:id="@+id/btnstr"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-
+                        android:src="@mipmap/strings"
                         app:civ_border_color="#050505"
                         app:civ_border_width="5dp" />
 
@@ -71,8 +71,9 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
-                android:layout_height="200dp"
+                android:layout_height="190dp"
                 android:layout_weight="1"
+                app:srcCompat="@mipmap/logo"
                  />
 
             <LinearLayout
@@ -90,7 +91,7 @@
                         android:id="@+id/btnsint"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-
+                        android:src="@mipmap/sintaxis"
                         app:civ_border_color="#F1F1F1"
                         app:civ_border_width="5dp" />
 
