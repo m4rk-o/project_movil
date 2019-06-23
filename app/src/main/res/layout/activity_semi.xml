@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_semi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnFib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fibonacci" />
+
+        <Button
+            android:id="@+id/btnPrimos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRIMOS" />
+
+        <Button
+            android:id="@+id/btnFac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FACTORIAL" />
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MULTIPLOS" />
+
+        <Button
+            android:id="@+id/btnMod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MÓDULO" />
+
+        <Button
+            android:id="@+id/btnExp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXPONENCIALES" />
+
+        <Button
+            android:id="@+id/btnCri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CRIBA" />
+
+        <Button
+            android:id="@+id/btnMcd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MCD/MCM" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
