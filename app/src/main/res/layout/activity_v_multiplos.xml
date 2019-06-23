@@ -6,18 +6,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#181717"
     tools:context=".Activity_v_multiplos">
 
-    <Button
-        android:id="@+id/btncorrermult"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="correr" />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/etcodmult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/etcodmult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_design"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btncorrermult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_disenio_part1"
+            android:text="correr" />
+    </LinearLayout>
+
 </LinearLayout>

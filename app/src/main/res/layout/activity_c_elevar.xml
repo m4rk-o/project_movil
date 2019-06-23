@@ -1,52 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#181717"
+    android:orientation="vertical"
     tools:context=".Activity_c_elevar">
-
-    <Button
-        android:id="@+id/btnverelevar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Codigo" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnverelevar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_disenio_part1"
+            android:text="Codigo" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etelev1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_design"
+                android:textColor="#FFFFFF"
+                android:ems="10"
+                android:inputType="number" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/etelev2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_design"
+                android:textColor="#FFFFFF"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnreselev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_disenio_part1"
+            android:text="Resultado" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </android.support.constraint.ConstraintLayout>
 
         <EditText
-            android:id="@+id/etelev1"
-            android:layout_width="wrap_content"
+            android:id="@+id/etreselev"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:background="@drawable/edit_text_design"
+            android:textColor="#FFFFFF"
             android:ems="10"
-            android:inputType="number" />
-
-        <EditText
-            android:id="@+id/etelev2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:inputType="textMultiLine" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnreselev"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Resultado" />
-
-    <EditText
-        android:id="@+id/etreselev"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textMultiLine" />
 
 </LinearLayout>

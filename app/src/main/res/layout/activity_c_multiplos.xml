@@ -1,60 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#181717"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".Activity_c_multiplos">
 
-    <Button
-        android:id="@+id/btnvermult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Codigo" />
-
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/etMult1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
-
-        <EditText
-            android:id="@+id/etMult2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <Button
-            android:id="@+id/operarmult"
+            android:id="@+id/btnvermult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Resultado" />
+            android:background="@drawable/btn_disenio_part1"
+            android:text="Codigo" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etMult1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_design"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#FFFFFF" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/etMult2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_design"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/operarmult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_disenio_part1"
+                android:text="Resultado" />
+        </LinearLayout>
+
     </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </android.support.constraint.ConstraintLayout>
 
     <EditText
         android:id="@+id/etResMult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_design"
         android:ems="10"
-        android:inputType="textMultiLine" />
-
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF" />
 </LinearLayout>
