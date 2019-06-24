@@ -58,6 +58,7 @@ public class Activity_c_fibonacci extends AppCompatActivity {
             dato += c + ", ";
             cont++;
         }
+        dato = dato.substring(0, dato.length()-2);
         return dato;
     }
 }

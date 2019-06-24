@@ -35,7 +35,7 @@ public class Activity_semi extends AppCompatActivity {
         pri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_primos.class);
                 String titulo = pri1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
@@ -46,7 +46,7 @@ public class Activity_semi extends AppCompatActivity {
         fac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_factorial.class);
                 String titulo = fac1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);

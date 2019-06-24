@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#181717"
-    tools:context=".Activity_v_fibonacci">
+    tools:context=".Activity_v_primos">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_codigoFibo"
+            android:id="@+id/tv_codigoPrimo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_design"
@@ -23,10 +23,10 @@
             android:textColor="#FFFFFF"
             />
         <Button
-            android:id="@+id/btn_volverFibo"
+            android:id="@+id/btn_volverPrimo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_disenio_part1"
             android:text="Volver" />
     </LinearLayout>
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#181717"
     android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".Activity_c_multiplos">
+    tools:context=".Activity_c_primos">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -15,7 +14,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnvermult"
+            android:id="@+id/btn_ver_codigoPrimo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_disenio_part1"
@@ -26,20 +25,22 @@
             android:layout_height="20dp">
 
         </android.support.constraint.ConstraintLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Ingresa el rango de los números primos a encontrar"
             android:textColor="#5F5F5F"
-            android:textAlignment="center"
-            android:textSize="14dp"/>
+            android:textSize="13dp"
+            android:textAlignment="center"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/etMult1"
+                android:id="@+id/et_izqPrimo"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -56,7 +57,7 @@
             </android.support.constraint.ConstraintLayout>
 
             <EditText
-                android:id="@+id/etMult2"
+                android:id="@+id/et_derPrimo"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -73,7 +74,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/operarmult"
+                android:id="@+id/btnResultado_Primo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -89,12 +90,13 @@
 
     </android.support.constraint.ConstraintLayout>
 
-    <EditText
-        android:id="@+id/etResMult"
+    <TextView
+        android:id="@+id/tv_Resultado_Primo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_design"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"/>
+
 </LinearLayout>

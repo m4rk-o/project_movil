@@ -22,7 +22,8 @@
             android:background="@drawable/edit_text_design"
             android:ems="10"
             android:inputType="textMultiLine"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            />
 
         <Button
             android:id="@+id/btncorrermult"

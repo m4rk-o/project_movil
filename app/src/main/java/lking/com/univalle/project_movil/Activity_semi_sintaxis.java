@@ -25,7 +25,7 @@ public class Activity_semi_sintaxis extends AppCompatActivity {
         HoMu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_hola.class);
                 String titulo = HoMu1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
@@ -69,7 +69,7 @@ public class Activity_semi_sintaxis extends AppCompatActivity {
         Ar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_arreglos.class);
                 String titulo = Ar1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);

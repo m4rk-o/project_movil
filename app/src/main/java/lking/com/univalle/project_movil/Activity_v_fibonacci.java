@@ -1,11 +1,9 @@
 package lking.com.univalle.project_movil;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class Activity_v_fibonacci extends AppCompatActivity {
@@ -20,8 +18,7 @@ public class Activity_v_fibonacci extends AppCompatActivity {
         btn_volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Activity_c_multiplos.class);
-                startActivity(i);
+                onBackPressed();
             }
         });
         String cod = "//Generamos una funcion que reciba un dato \n" +
