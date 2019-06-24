@@ -58,7 +58,7 @@ public class Activity_semi_sintaxis extends AppCompatActivity {
         EnOfFi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_EOF.class);
                 String titulo = EnOfFi1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);

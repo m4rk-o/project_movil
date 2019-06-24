@@ -24,7 +24,7 @@ public class Activity_semi_strings extends AppCompatActivity {
         Cap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_capicua.class);
                 String titulo = Cap1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
@@ -46,7 +46,7 @@ public class Activity_semi_strings extends AppCompatActivity {
         BuReCa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_repet.class);
                 String titulo = BuReCa1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
@@ -57,7 +57,7 @@ public class Activity_semi_strings extends AppCompatActivity {
         BuCaDi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_split.class);
                 String titulo = BuCaDi1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
