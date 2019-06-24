@@ -34,6 +34,20 @@
         </activity>
         <activity android:name=".Activity_semi" />
         <activity android:name=".Activity_final" />
+        <activity android:name=".Activity_c_capicua" />
+        <activity android:name=".Activity_arreglos" />
+        <activity android:name=".Activity_c_criba" />
+        <activity android:name=".Activity_c_factorial" />
+        <activity android:name=".Activity_c_hola" />
+        <activity android:name=".Activity_c_primos" />
+        <activity android:name=".Activity_c_repet" />
+        <activity android:name=".Activity_c_split" />
+        <activity android:name=".Activity_EOF" />
+        <activity android:name=".Activity_v_capicua" />
+        <activity android:name=".Activity_v_factorial_2" />
+        <activity android:name=".Activity_v_primos" />
+        <activity android:name=".Activity_v_repet" />
+        <activity android:name=".Activity_v_split" />
     </application>
 
 </manifest>
