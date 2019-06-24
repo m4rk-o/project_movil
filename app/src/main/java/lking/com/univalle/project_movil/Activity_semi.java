@@ -24,7 +24,7 @@ public class Activity_semi extends AppCompatActivity {
         fib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_fibonacci.class);
                 String titulo = fib1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);

@@ -21,8 +21,8 @@ public class Activity_c_multiplos extends AppCompatActivity {
         etresmult = findViewById(R.id.etResMult);
         vermult = findViewById(R.id.btnvermult);
         operar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                @Override
+                public void onClick(View view) {
                 try {
                     int n1 = Integer.parseInt(etmult1.getText().toString());
                     int n2 = Integer.parseInt(etmult2.getText().toString());

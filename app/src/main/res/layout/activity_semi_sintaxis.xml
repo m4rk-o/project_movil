@@ -32,7 +32,7 @@
                     android:id="@+id/img1"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:background="@mipmap/btn_holamundo"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -75,7 +75,7 @@
                     android:id="@+id/img2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_ld"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -119,7 +119,6 @@
                     android:id="@+id/img3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -162,7 +161,6 @@
                     android:id="@+id/img4"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -206,7 +204,7 @@
                     android:id="@+id/img5"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_array"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -251,7 +249,7 @@
                     android:id="@+id/img6"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_dprim"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 

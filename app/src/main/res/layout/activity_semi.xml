@@ -32,7 +32,7 @@
                     android:id="@+id/img1"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_fibonacci"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -75,7 +75,7 @@
                     android:id="@+id/img2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_primos"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -119,7 +119,7 @@
                     android:id="@+id/img3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_factorial"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -162,7 +162,7 @@
                     android:id="@+id/img4"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_multiplos"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -206,7 +206,7 @@
                     android:id="@+id/img5"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_modulo"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -251,7 +251,7 @@
                     android:id="@+id/img6"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_exponencial"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -295,7 +295,7 @@
                     android:id="@+id/img7"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_criberas"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 
@@ -340,7 +340,7 @@
                     android:id="@+id/img8"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src=""
+                    android:src="@mipmap/btn_maxcdmcm"
                     app:civ_border_color="#043605"
                     app:civ_border_width="5dp" />
 

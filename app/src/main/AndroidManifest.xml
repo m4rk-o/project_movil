@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_datos_primitivos"></activity>
+        <activity android:name=".Activity_v_fibonacci"></activity>
+        <activity android:name=".Activity_c_fibonacci" />
+        <activity android:name=".Activity_datos_primitivos" />
         <activity android:name=".Activity_scanner" />
         <activity android:name=".Activity_leerDatos" />
         <activity android:name=".Activity_c_elevar" />
