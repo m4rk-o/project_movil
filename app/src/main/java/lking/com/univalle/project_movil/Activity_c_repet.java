@@ -9,7 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Activity_c_repet extends AppCompatActivity {
-    Button operar,ver,correr;
+
+    Button operar,ver,correr, volver_s,volver_menu;
     EditText entrada,entrada1,salida;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,24 @@ public class Activity_c_repet extends AppCompatActivity {
         entrada = findViewById(R.id.et_repe);
         entrada1 = findViewById(R.id.et_repe1);
         salida= findViewById(R.id.res_repe);
+        volver_s = findViewById(R.id.volver_strings);
+        volver_menu = findViewById(R.id.volver_menu);
+
+
+        volver_s.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent m = new Intent(getApplicationContext(), Activity_semi_strings.class);
+                startActivity(m);
+            }
+        });
+        volver_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent m = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(m);
+            }
+        });
         correr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -54,7 +54,7 @@ public class Activity_semi_strings extends AppCompatActivity {
         BuCaDi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_c_split.class);
                 String titulo = BuCaDi.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);

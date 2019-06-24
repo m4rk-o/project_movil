@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class Activity_v_repet extends AppCompatActivity {
-Button correr,ver;
+Button correr,ver,volver_s,volver_menu;
 EditText cod;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,24 @@ EditText cod;
         cod=findViewById(R.id.cod_repe);
         correr=findViewById(R.id.correr_repe);
         ver=findViewById(R.id.ver_repe);
+        volver_s = findViewById(R.id.volver_strings);
+        volver_menu = findViewById(R.id.volver_menu);
+
+
+        volver_s.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent m = new Intent(getApplicationContext(), Activity_semi_strings.class);
+                startActivity(m);
+            }
+        });
+        volver_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent m = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(m);
+            }
+        });
         cod.setText("Función para contar las repeticiones de un caracter en una cadena:\n" +
                 "public int contarCaracteres(View v) {\n" +
                 "\tString cadena=entrada1.getText().toString();\n" +
