@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class Activity_v_capicua extends AppCompatActivity {
 EditText cod_capi;
     Button ver, correr,volver_s,volver_menu;
-    //cm
+    //cmm
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

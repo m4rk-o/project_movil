@@ -21,7 +21,6 @@ public class Activity_semi_strings extends AppCompatActivity {
         String titulo = recibir.getStringExtra("titulo");
         setTitle(titulo);
         Cap = findViewById(R.id.btn1);
-        //cm
         Cap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

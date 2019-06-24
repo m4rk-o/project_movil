@@ -17,7 +17,7 @@ public class Activity_c_repet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_repet);
         operar = findViewById(R.id.operar_repe);
-        //cm
+        //cmm
         ver = findViewById(R.id.ver_repe);
         correr=findViewById(R.id.correr_repe);
         entrada = findViewById(R.id.et_repe);
