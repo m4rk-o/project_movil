@@ -17,7 +17,7 @@ public class Activity_v_split extends AppCompatActivity {
         cod_capi=findViewById(R.id.cod_split);
         ver = findViewById(R.id.ver_split);
         correr = findViewById(R.id.correr_split);
-        //cmm
+        //cm
         volver_s = findViewById(R.id.volver_strings);
         volver_menu = findViewById(R.id.volver_menu);
 

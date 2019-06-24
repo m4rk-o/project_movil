@@ -12,7 +12,7 @@ public class Activity_c_capicua extends AppCompatActivity {
     Button operar, ver, correr, volver_s,volver_menu;
     EditText entrada,salida;
     TextView capi;
-    //cmm
+    //cm
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

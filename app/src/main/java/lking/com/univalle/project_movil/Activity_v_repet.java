@@ -14,7 +14,7 @@ EditText cod;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_v_repet);
-        //cmm
+        //cm
         cod=findViewById(R.id.cod_repe);
         correr=findViewById(R.id.correr_repe);
         ver=findViewById(R.id.ver_repe);

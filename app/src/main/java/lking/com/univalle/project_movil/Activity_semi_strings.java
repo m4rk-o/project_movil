@@ -10,7 +10,7 @@ public class Activity_semi_strings extends AppCompatActivity {
 
     Button Cap,ConCa,BuReCa,BuCaDi;
     Button correr_capi, ver_capi;
-
+//cm
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

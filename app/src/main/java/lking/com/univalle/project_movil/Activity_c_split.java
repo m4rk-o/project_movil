@@ -53,7 +53,7 @@ public class Activity_c_split extends AppCompatActivity {
                 startActivity(m);
             }
         });
-        //cmm
+        //cm
         operar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
