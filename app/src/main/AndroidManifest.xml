@@ -9,7 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity__criba"></activity>
+        <activity android:name=".Activity_c_matriz_str"></activity>
+        <activity android:name=".Activity_imprimir_datos" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_mcd" />
+        <activity android:name=".Activity_mcm" />
+        <activity android:name=".Activity_c_mcm_MCD" />
+        <activity android:name=".Activity__criba" />
+        <activity android:name=".Activity_c_criba" />
         <activity android:name=".Activity_v_fibonacci" />
         <activity android:name=".Activity_c_fibonacci" />
         <activity android:name=".Activity_datos_primitivos" />
@@ -25,18 +38,10 @@
         <activity android:name=".Activity_semi_sintaxis" />
         <activity android:name=".Activity_final_strings" />
         <activity android:name=".Activity_semi_strings" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".Activity_semi" />
         <activity android:name=".Activity_final" />
         <activity android:name=".Activity_c_capicua" />
         <activity android:name=".Activity_arreglos" />
-        <activity android:name=".Activity_c_criba" />
         <activity android:name=".Activity_c_factorial" />
         <activity android:name=".Activity_c_hola" />
         <activity android:name=".Activity_c_primos" />

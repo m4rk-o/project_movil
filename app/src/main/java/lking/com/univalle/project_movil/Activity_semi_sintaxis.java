@@ -47,7 +47,7 @@ public class Activity_semi_sintaxis extends AppCompatActivity {
         Im.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),Activity_final.class);
+                Intent i = new Intent(v.getContext(),Activity_imprimir_datos.class);
                 String titulo = Im1.getText().toString();
                 i.putExtra("titulo",titulo);
                 startActivity(i);
