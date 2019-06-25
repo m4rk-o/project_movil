@@ -15,13 +15,20 @@ public class Activity_leerDatos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leer_datos);
+
+        setTitle("Scanner");
+
         buff = findViewById(R.id.etbuff);
         scanner = findViewById(R.id.btnscan);
         scanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity_scanner.class);
+                String titulo = "Leer Datos";
+                i.putExtra("titulo",titulo);
+                i.putExtra("con","cad");
                 startActivity(i);
+                finish();
             }
         });
         String cod = "//Importamos librerias de buffered reader \n" +

@@ -6,34 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Activity_EOF extends AppCompatActivity {
-    Button volver_s,volver_menu;
-    EditText cod;
+    TextView cod;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__eof);
         cod = findViewById(R.id.cod_eof);
-        volver_s = findViewById(R.id.volver_sintaxis);
-        volver_menu = findViewById(R.id.volver_menu);
 
-
-        volver_s.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), Activity_semi_sintaxis.class);
-                startActivity(m);
-            }
-        });
-        volver_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(m);
-            }
-        });
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
 
         cod.setText("Los problemas de programación muchas veces requieren que el programa funcione por tiempo indefinido hasta que se llegue al fin del archivo (EOF)."
                 + "\n" +

@@ -15,6 +15,11 @@ public class Activity_c_modulo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_modulo);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         etmod1 = findViewById(R.id.etmod1);
         etmod2 = findViewById(R.id.etmod2);
         etResmod = findViewById(R.id.etresmod);
@@ -40,6 +45,9 @@ public class Activity_c_modulo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity_v_modulo.class);
+                String titulo = "Modulo";
+                i.putExtra("titulo",titulo);
+                i.putExtra("con","cad");
                 startActivity(i);
             }
         });

@@ -1,5 +1,6 @@
 package lking.com.univalle.project_movil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,14 +8,26 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Activity_mcm extends AppCompatActivity {
-    Button btn_volver_mcm;
+    Button volver_menu;
     TextView tv_codigo_mcm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mcm);
-        btn_volver_mcm.findViewById(R.id.btn_vuelta);
-        tv_codigo_mcm.findViewById(R.id.tv_codigomcm);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
+        tv_codigo_mcm = findViewById(R.id.tv_codigomcm);
+        volver_menu = findViewById(R.id.volver_menu);
+        volver_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent m = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(m);
+            }
+        });
         String cod = "//Creamos el método tipo String con dos parámetros \n" +
                 "public String mcm(int num1, int num2) {\n" +
                 "        int mcm = 0;\n" +
@@ -40,12 +53,5 @@ public class Activity_mcm extends AppCompatActivity {
                 "        return mcd;\n" +
                 "    }";
         tv_codigo_mcm.setText(cod);
-
-        btn_volver_mcm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
     }
 }

@@ -17,6 +17,11 @@ public class Activity_c_primos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_primos);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         btnResultado_Primo = findViewById(R.id.btnResultado_Primo);
         btn_ver_codigoPrimo = findViewById(R.id.btn_ver_codigoPrimo);
         etIzq_primo = findViewById(R.id.et_izqPrimo);
@@ -45,6 +50,9 @@ public class Activity_c_primos extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity_v_primos.class);
+                String titulo = "Numeros Primos";
+                i.putExtra("titulo",titulo);
+                i.putExtra("con","cad");
                 startActivity(i);
             }
         });

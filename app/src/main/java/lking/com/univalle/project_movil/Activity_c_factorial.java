@@ -17,6 +17,11 @@ public class Activity_c_factorial extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_factorial);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         btn_ver_codigoFactorial = findViewById(R.id.btn_ver_codigoFactorial);
         btnResultado_Fact = findViewById(R.id.btnResultado_Fact);
         et_derFact = findViewById(R.id.et_derFact);
@@ -43,6 +48,9 @@ public class Activity_c_factorial extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity_v_factorial_2.class);
+                String titulo = "Factorial";
+                i.putExtra("titulo",titulo);
+                i.putExtra("con","cad");
                 startActivity(i);
             }
         });

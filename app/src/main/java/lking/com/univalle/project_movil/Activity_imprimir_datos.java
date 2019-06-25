@@ -1,5 +1,6 @@
 package lking.com.univalle.project_movil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -10,7 +11,10 @@ public class Activity_imprimir_datos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imprimir_datos);
-        tv_imprimir_datos.findViewById(R.id.tv_imprimir);
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+        tv_imprimir_datos=findViewById(R.id.tv_imprimir);
         String cod = "//El objeto System.out es del tipo java.io.PrintStream y, por ello, dispone de métodos para escribir con formato en el flujo de salida, usualmente el monitor. \n" +
                 "//la sentencia para imprimir por pantalla y dar dos salto de línea, el salto de línea propio del método y el indicado por '\\n', es: \n" +
                 "System.out.println(\"Esto sale en pantalla\\n\"); \n" +

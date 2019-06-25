@@ -62,7 +62,7 @@
                      />
             </LinearLayout>
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:id="@+id/btnPrimosL"
                 android:layout_width="wrap_content"
                 android:layout_height="90dp"
@@ -104,7 +104,7 @@
                     android:background="@mipmap/simbolo01"
                      />
 
-            </LinearLayout>
+            </LinearLayout>-->
 
             <LinearLayout
                 android:id="@+id/btnFacL"
@@ -120,6 +120,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     app:civ_border_color="#043605"
+                    android:src="@mipmap/cadenas"
                     app:civ_border_width="5dp" />
 
                 <LinearLayout
@@ -162,6 +163,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     app:civ_border_color="#043605"
+                    android:src="@mipmap/cadenassincaracter"
                     app:civ_border_width="5dp" />
 
                 <LinearLayout

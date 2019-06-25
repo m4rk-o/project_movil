@@ -15,6 +15,11 @@ public class Activity_c_multiplos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_multiplos);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         operar = findViewById(R.id.operarmult);
         etmult1 = findViewById(R.id.etMult1);
         etmult2 = findViewById(R.id.etMult2);
@@ -40,6 +45,9 @@ public class Activity_c_multiplos extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity_v_multiplos.class);
+                String titulo = "Multiplos";
+                i.putExtra("titulo",titulo);
+                i.putExtra("con","cad");
                 startActivity(i);
             }
         });

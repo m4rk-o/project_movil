@@ -15,6 +15,11 @@ public class Activity_c_elevar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_elevar);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         etelev1 = findViewById(R.id.etelev1);
         etelev2 = findViewById(R.id.etelev2);
         etreselev = findViewById(R.id.etreselev);
@@ -40,6 +45,9 @@ public class Activity_c_elevar extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity_v_elevar.class);
+                String titulo = "Exponencial";
+                i.putExtra("titulo",titulo);
+                i.putExtra("con","cad");
                 startActivity(i);
             }
         });

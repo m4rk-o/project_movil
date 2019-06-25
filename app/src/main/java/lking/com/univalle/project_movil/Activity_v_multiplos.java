@@ -9,19 +9,24 @@ import android.widget.EditText;
 
 public class Activity_v_multiplos extends AppCompatActivity {
     EditText etvermult;
-    Button correr;
+    Button volver_menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_v_multiplos);
         etvermult = findViewById(R.id.etcodmult);
-        correr = findViewById(R.id.btncorrermult);
-        correr.setOnClickListener(new View.OnClickListener() {
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
+        volver_menu = findViewById(R.id.volver_menu);
+        volver_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Activity_c_multiplos.class);
-                startActivity(i);
+                Intent m = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(m);
             }
         });
         String cod = "//Generamos una funcion que reciba dos datos \n" +

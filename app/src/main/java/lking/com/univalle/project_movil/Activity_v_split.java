@@ -6,37 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Activity_v_split extends AppCompatActivity {
-    EditText cod_capi;
-    Button ver, correr,volver_s,volver_menu;
+    TextView cod_capi;
+    Button volver_menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_v_split);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         cod_capi=findViewById(R.id.cod_split);
-        ver = findViewById(R.id.ver_split);
-        correr = findViewById(R.id.correr_split);
-        //cm
-        volver_s = findViewById(R.id.volver_strings);
-        volver_menu = findViewById(R.id.volver_menu);
-
-
-        volver_s.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), Activity_semi_strings.class);
-                startActivity(m);
-            }
-        });
-        volver_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(m);
-            }
-        });
+        volver_menu = findViewById(R.id.ver_split);
 
         cod_capi.setText("//Función para dividir una cadena por un caracter:\n" +
                 " public String dividir_cadena(String cad, String chr)\n" +
@@ -50,19 +36,11 @@ public class Activity_v_split extends AppCompatActivity {
                 "            div=div+a+\" \"; }\n" +
                 "//devolvemos la cadena div que contiene la cadena recortada\n" +
                 "        return(div);}");
-        cod_capi.setFocusable(false);
-        cod_capi.setClickable(false);
-        correr.setOnClickListener(new View.OnClickListener() {
+        volver_menu = findViewById(R.id.volver_menu);
+        volver_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), Activity_c_split.class);
-                startActivity(m);
-            }
-        });
-        ver.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), Activity_v_split.class);
+                Intent m = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(m);
             }
         });

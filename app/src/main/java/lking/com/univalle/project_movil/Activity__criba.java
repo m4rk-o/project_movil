@@ -1,5 +1,6 @@
 package lking.com.univalle.project_movil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,19 +8,24 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Activity__criba extends AppCompatActivity {
-    Button btn_volver_criba;
+    Button volver_menu;
     TextView tv_cod_criba;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__criba);
 
-        btn_volver_criba = findViewById(R.id.btn_volverCriba);
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         tv_cod_criba = findViewById(R.id.tv_codigoCriba);
-        btn_volver_criba.setOnClickListener(new View.OnClickListener() {
+        volver_menu = findViewById(R.id.volver_menu);
+        volver_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onBackPressed();
+                Intent m = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(m);
             }
         });
         String cod = "//Creamos una funcion con paramatro int que retorne un String \n" +

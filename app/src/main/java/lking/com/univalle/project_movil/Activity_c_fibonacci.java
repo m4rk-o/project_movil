@@ -17,6 +17,11 @@ public class Activity_c_fibonacci extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_fibonacci);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         btnResultado = findViewById(R.id.btnResultado_fibo);
         btnVer_codigo = findViewById(R.id.btn_ver_codigoFibo);
         et_der = findViewById(R.id.et_derFibo);
@@ -44,6 +49,9 @@ public class Activity_c_fibonacci extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity_v_fibonacci.class);
+                String titulo = "Fibonacci";
+                i.putExtra("titulo",titulo);
+                i.putExtra("con","cad");
                 startActivity(i);
             }
         });

@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Activity_c_capicua extends AppCompatActivity {
-    Button operar, ver, correr, volver_s,volver_menu;
+    Button operar, ver;
     EditText entrada,salida;
     TextView capi;
 
@@ -17,38 +17,19 @@ public class Activity_c_capicua extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_capicua);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         operar = findViewById(R.id.operar_capi);
         ver = findViewById(R.id.ver_capi);
-        correr = findViewById(R.id.correr_capi);
         entrada = findViewById(R.id.et_capi);
         salida= findViewById(R.id.res_capi);
         capi=findViewById(R.id.capi);
-        volver_s = findViewById(R.id.volver_strings);
-        volver_menu = findViewById(R.id.volver_menu);
 
 
-        volver_s.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), Activity_semi_strings.class);
-                startActivity(m);
-            }
-        });
-        volver_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(m);
-            }
-        });
 
-        correr.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), Activity_c_capicua.class);
-                startActivity(m);
-            }
-        });
         ver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

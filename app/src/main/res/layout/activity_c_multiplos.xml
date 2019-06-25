@@ -30,9 +30,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Ingresa el rango de los números primos a encontrar"
-            android:textColor="#5F5F5F"
+            android:textColor="#FFFFFF"
             android:textAlignment="center"
             android:textSize="14dp"/>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </android.support.constraint.ConstraintLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +46,7 @@
             <EditText
                 android:id="@+id/etMult1"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_design"
                 android:ems="10"
@@ -58,7 +63,7 @@
             <EditText
                 android:id="@+id/etMult2"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_design"
                 android:ems="10"
@@ -66,7 +71,11 @@
                 android:textColor="#FFFFFF" />
 
         </LinearLayout>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
 
+        </android.support.constraint.ConstraintLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

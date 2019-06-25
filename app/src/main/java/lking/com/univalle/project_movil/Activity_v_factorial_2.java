@@ -1,5 +1,6 @@
 package lking.com.univalle.project_movil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,20 +8,26 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Activity_v_factorial_2 extends AppCompatActivity {
-    Button volver;
+    Button volver_menu;
     TextView casa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_v_factorial_2);
-        volver = findViewById(R.id.btnVolver_casa);
-        casa = findViewById(R.id.tv_casa);
-        volver.setOnClickListener(new View.OnClickListener() {
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
+        volver_menu = findViewById(R.id.volver_menu);
+        volver_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onBackPressed();
+                Intent m = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(m);
             }
         });
+        casa = findViewById(R.id.tv_casa);
         String cod = "//Generamos una funcion que reciba un dato \n" +
                 "public String factorial(int x){\n" +
                 "        //Declaramos una variable que almacenará el resultado \n" +

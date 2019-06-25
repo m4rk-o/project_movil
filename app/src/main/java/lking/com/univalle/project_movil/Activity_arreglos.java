@@ -1,5 +1,6 @@
 package lking.com.univalle.project_movil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -10,6 +11,11 @@ public class Activity_arreglos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arreglos);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         arreglo = findViewById(R.id.tv_arreglos);
         String Cod = "//ARREGLO UNIDIMESIONAL \n" +
                 "int array1[]; //declaracion arreglo de tipo numerico (el tipo puede ser distinto, ej. byte, String char etc.)\n" +

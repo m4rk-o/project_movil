@@ -23,7 +23,7 @@
                 android:id="@+id/btnnum"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@mipmap/numeros"
+                android:src="@mipmap/numerosf"
                 app:civ_border_color="#043605"
                 app:civ_border_width="5dp" />
 
@@ -55,7 +55,7 @@
                         android:id="@+id/btnstr"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@mipmap/strings"
+                        android:src="@mipmap/cadenasf"
                         app:civ_border_color="#050505"
                         app:civ_border_width="5dp" />
 
@@ -91,7 +91,7 @@
                         android:id="@+id/btnsint"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@mipmap/sintaxis"
+                        android:src="@mipmap/sintaxisf"
                         app:civ_border_color="#F1F1F1"
                         app:civ_border_width="5dp" />
 

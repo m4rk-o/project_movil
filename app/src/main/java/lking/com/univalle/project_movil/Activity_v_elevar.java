@@ -10,19 +10,24 @@ import android.widget.EditText;
 
 public class Activity_v_elevar extends AppCompatActivity {
     EditText etcodelev;
-    Button correr;
+    Button volver_menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_v_elevar);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         etcodelev = findViewById(R.id.etcodelev);
-        correr = findViewById(R.id.btncorrerelev);
-        correr.setOnClickListener(new View.OnClickListener() {
+        volver_menu = findViewById(R.id.volver_menu);
+        volver_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Activity_c_elevar.class);
-                startActivity(i);
+                Intent m = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(m);
             }
         });
         String cod = "//Creamos una funcion recursiva \n" +

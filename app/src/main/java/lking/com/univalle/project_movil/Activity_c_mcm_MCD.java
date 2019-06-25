@@ -16,6 +16,11 @@ public class Activity_c_mcm_MCD extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_mcm__mcd);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         btn_codigo_mcm = findViewById(R.id.btn_ver_codigomcm);
         btn_codigo_MCD = findViewById(R.id.btn_ver_codigoMCD);
         btn_res_mcm = findViewById(R.id.btnResultado_mcm);
@@ -30,6 +35,9 @@ public class Activity_c_mcm_MCD extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity_mcm.class);
+                String titulo = "Maximo Comun Multiplo";
+                i.putExtra("titulo",titulo);
+                i.putExtra("con","cad");
                 startActivity(i);
             }
         });
@@ -37,6 +45,9 @@ public class Activity_c_mcm_MCD extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent j = new Intent(getApplicationContext(), Activity_mcd.class);
+                String titulo = "Maximo Comun Divisor";
+                j.putExtra("titulo",titulo);
+                j.putExtra("con","cad");
                 startActivity(j);
             }
         });

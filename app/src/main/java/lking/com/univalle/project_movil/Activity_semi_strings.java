@@ -30,7 +30,7 @@ public class Activity_semi_strings extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        ConCa = findViewById(R.id.btn2);
+        /*ConCa = findViewById(R.id.btn2);
         ConCa1 = findViewById(R.id.textView3);
         ConCa.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +40,7 @@ public class Activity_semi_strings extends AppCompatActivity {
                 i.putExtra("titulo",titulo);
                 startActivity(i);
             }
-        });
+        });*/
         BuReCa = findViewById(R.id.btn3);
         BuReCa1 = findViewById(R.id.textView5);
         BuReCa.setOnClickListener(new View.OnClickListener() {

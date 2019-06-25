@@ -15,6 +15,9 @@ public class Activity_scanner extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanner);
+
+        setTitle("Buffered");
+
         scan = findViewById(R.id.etscan);
         buff = findViewById(R.id.btnbuff);
         buff.setOnClickListener(new View.OnClickListener() {
@@ -22,6 +25,7 @@ public class Activity_scanner extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity_leerDatos.class);
                 startActivity(i);
+                finish();
             }
         });
         String cod = "//Importamos la libreria de Scanner\n" +

@@ -23,12 +23,17 @@
             android:inputType="textMultiLine"
             android:textColor="#FFFFFF"
             />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </android.support.constraint.ConstraintLayout>
         <Button
-            android:id="@+id/btn_volverMCD"
+            android:id="@+id/volver_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_disenio_part1"
-            android:text="Volver" />
+            android:text="Menú Principal" />
     </LinearLayout>
 
 </LinearLayout>

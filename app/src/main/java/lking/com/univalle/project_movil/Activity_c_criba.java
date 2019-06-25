@@ -17,6 +17,11 @@ public class Activity_c_criba extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_criba);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         btn_ResCriba = findViewById(R.id.btnResultado_Criba);
         btn_codigo_criba = findViewById(R.id.btn_ver_codigoCriba);
         et_criba = findViewById(R.id.et_derCriba);
@@ -26,6 +31,9 @@ public class Activity_c_criba extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Activity__criba.class);
+                String titulo = "Criba de Erastostenes";
+                i.putExtra("titulo",titulo);
+                i.putExtra("con","cad");
                 startActivity(i);
             }
         });

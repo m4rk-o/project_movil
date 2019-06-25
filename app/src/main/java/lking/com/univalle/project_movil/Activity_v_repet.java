@@ -6,29 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Activity_v_repet extends AppCompatActivity {
-    Button correr,ver,volver_s,volver_menu;
-    EditText cod;
+    Button volver_menu;
+    TextView cod;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_v_repet);
+
+        setTitle("Buscar repeticon de un caracter");
+
         cod=findViewById(R.id.cod_repe);
-        correr=findViewById(R.id.correr_repe);
-        ver=findViewById(R.id.ver_repe);
-        volver_s = findViewById(R.id.volver_strings);
         volver_menu = findViewById(R.id.volver_menu);
 
 
-        volver_s.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), Activity_semi_strings.class);
-                startActivity(m);
-            }
-        });
         volver_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,20 +47,6 @@ public class Activity_v_repet extends AppCompatActivity {
                 "   }");
         cod.setFocusable(false);
         cod.setClickable(false);
-        correr.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), Activity_c_repet.class);
-                startActivity(m);
-            }
-        });
-        ver.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent m = new Intent(getApplicationContext(), Activity_v_repet.class);
-                startActivity(m);
-            }
-        });
 
 
     }

@@ -1,5 +1,6 @@
 package lking.com.univalle.project_movil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,17 +9,23 @@ import android.widget.TextView;
 
 public class Activity_v_primos extends AppCompatActivity {
     TextView tv_codigoPrimo;
-    Button btn_volverPrimo;
+    Button volver_menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_v_primos);
+
+        Intent recibir = getIntent();
+        String titulo = recibir.getStringExtra("titulo");
+        setTitle(titulo);
+
         tv_codigoPrimo = findViewById(R.id.tv_codigoPrimo);
-        btn_volverPrimo = findViewById(R.id.btn_volverPrimo);
-        btn_volverPrimo.setOnClickListener(new View.OnClickListener() {
+        volver_menu = findViewById(R.id.volver_menu);
+        volver_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onBackPressed();
+                Intent m = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(m);
             }
         });
         String cod = "//Generamos una funcion que reciba dos datos \n" +
