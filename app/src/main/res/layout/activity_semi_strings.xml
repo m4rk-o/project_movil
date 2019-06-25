@@ -138,7 +138,7 @@
                         android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Que se lee igual de izquierda a derecha que de derecha a izquierda." />
+                        android:text="Contar las veces que aparece un caracter en una cadena." />
                 </LinearLayout>
 
                 <Button
@@ -175,13 +175,13 @@
                         android:id="@+id/textView7"
                         android:layout_width="200dp"
                         android:layout_height="22dp"
-                        android:text="Buscar caracter distinto" />
+                        android:text="Separar una cadena" />
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Que se lee igual de izquierda a derecha que de derecha a izquierda." />
+                        android:text="Separar una cadena de acuerdo a un caracter." />
                 </LinearLayout>
 
                 <Button
