@@ -51,7 +51,7 @@
                         android:id="@+id/textView2"
                         android:layout_width="200dp"
                         android:layout_height="80dp"
-                        android:text="TextView" />
+                        android:text="El primer codigo facil de aprender." />
                 </LinearLayout>
 
                 <Button
@@ -94,7 +94,7 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Leer datos java con scanner o bufferredreader." />
                 </LinearLayout>
 
                 <Button
@@ -138,7 +138,7 @@
                         android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Imprime los datos en consola." />
                 </LinearLayout>
 
                 <Button
@@ -181,7 +181,7 @@
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Lectura de datos hasta que ya no hayan datos de entrada" />
                 </LinearLayout>
 
                 <Button
@@ -225,7 +225,7 @@
                         android:id="@+id/textView10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Matrices, vectores, listas, etc." />
 
                 </LinearLayout>
 
@@ -270,7 +270,7 @@
                         android:id="@+id/textView12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Nombres, tipos y rangos de valores. Ej: boolean, int, char, double, etc." />
                 </LinearLayout>
 
                 <Button
