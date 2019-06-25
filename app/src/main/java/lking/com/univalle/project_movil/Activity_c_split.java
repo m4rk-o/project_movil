@@ -28,6 +28,7 @@ public class Activity_c_split extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), Activity_v_split.class);
                 startActivity(m);
+                finish();
             }
         });
         //cm

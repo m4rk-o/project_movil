@@ -35,6 +35,7 @@ public class Activity_c_criba extends AppCompatActivity {
                 i.putExtra("titulo",titulo);
                 i.putExtra("con","cad");
                 startActivity(i);
+                finish();
             }
         });
         btn_ResCriba.setOnClickListener(new View.OnClickListener() {

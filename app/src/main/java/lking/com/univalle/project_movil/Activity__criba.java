@@ -26,6 +26,7 @@ public class Activity__criba extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(m);
+                finish();
             }
         });
         String cod = "//Creamos una funcion con paramatro int que retorne un String \n" +

@@ -45,6 +45,7 @@ public class Activity_v_fibonacci extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(m);
+                finish();
             }
         });
     }

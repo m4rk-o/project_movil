@@ -26,6 +26,7 @@ public class Activity_mcd extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(m);
+                finish();
             }
         });
         String cod = "//Declaramos un método que aceptará dos parámetros \n" +

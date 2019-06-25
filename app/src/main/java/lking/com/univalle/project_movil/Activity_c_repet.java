@@ -35,6 +35,7 @@ public class Activity_c_repet extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), Activity_v_repet.class);
                 startActivity(m);
+                finish();
             }
         });
         operar.setOnClickListener(new View.OnClickListener() {

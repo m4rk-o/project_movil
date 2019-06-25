@@ -26,6 +26,7 @@ public class Activity_mcm extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(m);
+                finish();
             }
         });
         String cod = "//Creamos el método tipo String con dos parámetros \n" +

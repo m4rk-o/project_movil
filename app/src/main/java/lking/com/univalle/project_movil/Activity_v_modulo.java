@@ -27,6 +27,7 @@ public class Activity_v_modulo extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(m);
+                finish();
             }
         });
         String cod = "//Generamos una función recursiva \n" +

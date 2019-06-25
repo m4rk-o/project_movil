@@ -28,6 +28,7 @@ public class Activity_v_elevar extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(m);
+                finish();
             }
         });
         String cod = "//Creamos una funcion recursiva \n" +

@@ -25,6 +25,7 @@ public class Activity_v_factorial_2 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(m);
+                finish();
             }
         });
         casa = findViewById(R.id.tv_casa);

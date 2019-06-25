@@ -35,6 +35,7 @@ public class Activity_c_capicua extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), Activity_v_capicua.class);
                 startActivity(m);
+                finish();
             }
         });
 

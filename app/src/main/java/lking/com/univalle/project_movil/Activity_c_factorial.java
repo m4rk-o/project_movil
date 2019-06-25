@@ -52,6 +52,7 @@ public class Activity_c_factorial extends AppCompatActivity {
                 i.putExtra("titulo",titulo);
                 i.putExtra("con","cad");
                 startActivity(i);
+                finish();
             }
         });
     }

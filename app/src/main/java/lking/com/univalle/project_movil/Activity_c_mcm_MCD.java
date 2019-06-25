@@ -39,6 +39,7 @@ public class Activity_c_mcm_MCD extends AppCompatActivity {
                 i.putExtra("titulo",titulo);
                 i.putExtra("con","cad");
                 startActivity(i);
+                finish();
             }
         });
         btn_codigo_MCD.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +50,7 @@ public class Activity_c_mcm_MCD extends AppCompatActivity {
                 j.putExtra("titulo",titulo);
                 j.putExtra("con","cad");
                 startActivity(j);
+                finish();
             }
         });
 

@@ -54,6 +54,7 @@ public class Activity_c_primos extends AppCompatActivity {
                 i.putExtra("titulo",titulo);
                 i.putExtra("con","cad");
                 startActivity(i);
+                finish();
             }
         });
     }

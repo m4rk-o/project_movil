@@ -28,6 +28,7 @@ public class Activity_v_repet extends AppCompatActivity {
             public void onClick(View view) {
                 Intent m = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(m);
+                finish();
             }
         });
         cod.setText("Función para contar las repeticiones de un caracter en una cadena:\n" +
